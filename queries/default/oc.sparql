@@ -1,0 +1,11 @@
+# 1. List the organization committee
+# Datasource: http://data.linkeddatafragments.org/eswc2020
+SELECT ?role ?person ?affiliation WHERE {
+  ?roleId conference:isPartOf <https://metadata.2020.eswc-conferences.org/rdf/ontology/Conference>. 
+  ?roleId rdfs:label ?role.
+  ?personId conference:holdsRole ?roleId.
+  ?personId rdfs:label ?person.
+  ?personId conference:hasAffiliation ?affiliationId.
+  ?affiliationId conference:withOrganisation ?organizationId.
+  ?organizationId rdfs:label ?affiliation.
+}

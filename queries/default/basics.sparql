@@ -1,0 +1,3 @@
+# 2. Basic conference information
+# Datasource: http://data.linkeddatafragments.org/eswc2020
+DESCRIBE <https://metadata.2020.eswc-conferences.org/rdf/ontology/Conference>
