@@ -24,7 +24,7 @@ a, button, label {
   font-weight: bold;
 }
 a, button, input:hover, label {
-  color: #be1622;
+  color: #1e73be;
   cursor: pointer;
   text-decoration: none;
 }
@@ -85,7 +85,7 @@ header .logo {
 }
 header img {
   margin: -9px -11px 0 0;
-  height: 81px;
+  height: 50px;
 }
 
 main {
@@ -193,13 +193,13 @@ textarea {
   width: calc(100% - 2px);
 }
 .result dl {
-  border: 1px solid #be1622;
+  border: 1px solid #1e73be;
   margin: 0 0 1em;
   border-radius: 5px;
 }
 .result dl:hover {
   color: white;
-  background-color: #be1622;
+  background-color: #1e73be;
 }
 .result dl:after {
   content: "";
@@ -209,7 +209,7 @@ textarea {
 .result dt {
   float: left;
   clear: left;
-  background-color: #be1622;
+  background-color: #1e73be;
   color: white;
   font-style: normal;
   font-weight: bold;
