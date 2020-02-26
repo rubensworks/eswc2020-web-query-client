@@ -17,6 +17,7 @@ module.exports = [
       './styles/ldf-client.css',
       './images/chosen-sprite.png',
       './images/chosen-sprite@2x.png',
+      './images/eswc2020.png',
       './images/graphql.svg',
       './images/logo.svg',
       './images/settings.svg',
