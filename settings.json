@@ -6,7 +6,7 @@
   "datasources": [
     {
       "name": "ESWC 2020 Metadata",
-      "url": "http://data.linkeddatafragments.org/eswc2020"
+      "url": "https://data.linkeddatafragments.org/eswc2020"
     }
   ],
   "prefixes": {

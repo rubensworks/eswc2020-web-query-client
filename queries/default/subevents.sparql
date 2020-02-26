@@ -1,5 +1,5 @@
 # 3. Show the locations of all sub-events
-# Datasource: http://data.linkeddatafragments.org/eswc2020
+# Datasource: https://data.linkeddatafragments.org/eswc2020
 SELECT ?subEvent ?location WHERE {
   ?subEventId conference:isSubEventOf <https://metadata.2019.eswc-conferences.org/rdf/ontology/Conference>;
               rdfs:label ?subEvent;
