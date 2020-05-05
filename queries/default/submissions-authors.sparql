@@ -1,0 +1,6 @@
+# 5. Submission authors
+# Datasource: https://data.linkeddatafragments.org/eswc2020
+SELECT DISTINCT ?authorName WHERE {
+  ?author conference:name ?authorName;
+          conference:holdsRole [ conference:withRole conference:PublishingRole ].
+}
