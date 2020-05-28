@@ -1,0 +1,10 @@
+# Talks
+# Datasource: https://data.linkeddatafragments.org/eswc2020
+SELECT ?talk ?start ?end WHERE {
+  ?subject a conference:Talk;
+    rdfs:label ?talk.
+  OPTIONAL {
+    ?subject conference:startDate ?start;
+      conference:endDate ?end.
+  }
+}

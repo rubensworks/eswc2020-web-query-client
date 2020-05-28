@@ -1,0 +1,13 @@
+# Non-anonymous reviewers
+# Datasource: https://data.linkeddatafragments.org/eswc2020
+PREFIX fr: <http://purl.org/spar/fr/>
+PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+PREFIX cito: <http://purl.org/spar/cito/>
+SELECT ?paper ?reviewer WHERE {
+  ?review a fr:ReviewVersion;
+    cito:reviews [ conference:title ?paper ];
+    frbr:creator [
+      conference:withRole eswc2020:NonAnonymousReviewerRole;
+      conference:isHeldBy [ rdfs:label ?reviewer ]
+    ].
+}

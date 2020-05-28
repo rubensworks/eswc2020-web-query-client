@@ -1,0 +1,7 @@
+# Accepted papers
+# Datasource: https://data.linkeddatafragments.org/eswc2020
+SELECT ?title ?track WHERE {
+  ?submission a conference:InProceedings;
+    conference:title ?title;
+    eswc2020:track [ rdfs:label ?track ].
+}
